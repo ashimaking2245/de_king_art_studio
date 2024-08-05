@@ -217,11 +217,6 @@ h3{
     margin-bottom: 40px;
     padding: 0;
 }
-@media(max-width: 700px){
-    .cta h1{
-        font-size: 24px;
-    }
-}
 
 /*----------footer------*/
 .footer{
@@ -331,4 +326,45 @@ h3{
     box-sizing: border-box;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
 
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+
+    .nav-links-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links-menu li {
+        padding: 1em;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links-menu.active {
+        display: flex;
+    }
+}

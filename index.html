@@ -17,7 +17,7 @@
             <a href="index.html"><img src="image/banana.jpg" width="50" alt=""></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hidemenu()" ></i>
-                <ul>
+                <ul class="nav-links-menu" id="nav-links-menu">
                     <li><a href="home.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="galleryt.html">GALLERY</a></li>
@@ -25,7 +25,11 @@
                 </ul>
 
             </div>
-            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
         <div class="text-box">
             <h1>DE KING ART STUDIO</h1>
@@ -107,28 +111,6 @@
 
     <!--------about us content--------->
 
-    
-
-
-
-
-
-
-
-
-
-    <!-------JavaScript for Toggle Menu------>
-    <script>
-
-         var navLinks= document.getElementById("navLinks");
-
-         function showMenu(){
-            navLinks.style.right ="0";
-         }
-         function hideMenu(){
-            navLinks.style.right ="-200px";
-         }
-
-    </script>
+    <script src="/sscritp.js"></script>
 </body>
 </html>
