@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/banana.jpg" width="50" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()" ></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="galleryt.html">GALLERY</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>DE KING ART STUDIO</h1>
+            <p>
+                Welcome to De king art studio we give you the best artworks.
+            </p>
+            <a href="" class="hero-btn">Visit De King Art Studio</a>
+
+
+    </section>
+    <!-----------menu-------->
+    <section class="menu">
+        <h1>Menu for our artworks</h1>
+        <p>welcome to my studio where you get your beutiful artworks.</p>
+
+        
+        <div class="row">
+            <div class="course-col">
+                <h3>Black and white Art</h3>
+                <p>This involve the use of different pencils for drawing and sketching. it involve the use of different papers too</p>
+            </div>
+        <div class="row">
+            <div class="course-col">
+                <h3>Painting Art</h3>
+                <p>this involve the use of different paints, </p>
+            </div>
+        <div class="row">
+            <div class="course-col">
+                <h3>Wall Mural drawing</h3>
+                <p>this is the design on walls, but interior and exterior designs</p>
+            </div>
+        <div class="row">
+            <div class="course-col">
+                <h3>Fabric designs</h3>
+                <p>This is the design on dfferent cloths.. t-shirt , jean trouser,polos etc</p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <!------Studio------>
+
+    <section class="studio">
+        <h1>Our Mini Studio</h1>
+        <p>I warmly welcome you all to De King mini studio</p>
+
+        <div class="row">
+            <div class="studio-col">
+                <img src="image/studio.jpg" alt="">
+                <div class="Layer">
+                    <h3>CROSS RIVER</h3>
+                </div>
+            </div>
+            <div class="studio-col">
+                <img src="image/active.jpg" alt="">
+                <div class="Layer">
+                    <h3>ABUJA</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!---------Call To Action------>
+
+    <section class="cta">
+        <h1>Enroll For Our <br> Various Online Course Anywhere From The World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+
+    </section>
+
+    <!---------Call To Action------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Corrupti mollitia dolorum debitis nobis saepe temporibus modi neque ab quam! Laboriosam incidunt ipsum explicabo soluta cumque itaque perferendis nulla. Perferendis, praesentium.</p>
+
+    </section>
+
+    <!--------about us content--------->
+
+    
+
+
+
+
+
+
+
+
+
+    <!-------JavaScript for Toggle Menu------>
+    <script>
+
+         var navLinks= document.getElementById("navLinks");
+
+         function showMenu(){
+            navLinks.style.right ="0";
+         }
+         function hideMenu(){
+            navLinks.style.right ="-200px";
+         }
+
+    </script>
+</body>
+</html>
