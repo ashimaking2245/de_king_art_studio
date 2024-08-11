@@ -6,17 +6,19 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/pool.jpg);
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/pool.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
+
 }
 nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-}nav img{
+}
+nav img{
     width: 150px;
 }
 .nav-links{
@@ -31,11 +33,11 @@ nav{
 }
 .nav-links ul li a{
     color: #fff;
-    text-decoration:none ;
+    text-decoration: none;
     font-size: 13px;
 }
 .nav-links ul li::after{
-    content: '';
+    content:"" ;
     width: 0%;
     height: 2px;
     background: #f44336;
@@ -47,22 +49,24 @@ nav{
     width: 100%;
 }
 .text-box{
-    width: 90%;
+    width: 60%;
     color: #fff;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 45%;
+    transform: translate(-45%,-45%);
     text-align: center;
 }
 .text-box h1{
     font-size: 62px;
+
 }
 .text-box p{
     margin: 10px 0 40px;
     font-size: 14px;
     color: #fff;
 }
+
 .hero-btn{
     display: inline-block;
     text-decoration: none;
@@ -70,7 +74,7 @@ nav{
     border: 1px solid #fff;
     padding: 12px 34px;
     font-size: 13px;
-    background-color: transparent;
+    background: transparent;
     position: relative;
     cursor: pointer;
 }
@@ -79,25 +83,28 @@ nav{
     background: #f44336;
     transition: 1s;
 }
-@media(max-width:700px){
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
     .text-box h1{
-        font-size: 62px;
+        font-size: 20px;
     }
     .nav-links ul li{
         display: block;
     }
     .nav-links{
-        position: fixed;
+        position: absolute;
         background: #f44336;
         height: 100vh;
         width: 200px;
         top: 0;
-        right:-200px;
+        right: -200px;
         text-align: left;
         z-index: 2;
         transition: 1s;
     }
-    nav. fa{
+    nav .fa{
         display: block;
         color: #fff;
         margin: 10px;
@@ -108,6 +115,9 @@ nav{
         padding: 30px;
     }
 }
+
+
+
 /*-------- menu -----*/
 
 .menu{
@@ -133,7 +143,7 @@ p{
     display: flex;
     justify-content: space-between;
 }
-.course-col{
+.menu-col{
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
@@ -147,7 +157,7 @@ h3{
     font-weight: 600;
     margin: 10px 0;
 }
-.course-col:hover{
+.menu-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 @media(max-width: 700px){
@@ -155,7 +165,8 @@ h3{
         flex-direction: column;
     }
 }
-/*----------Studio------*/
+/*---------- Studio ------*/
+
 .studio{
     width: 80%;
     margin: auto;
@@ -171,20 +182,23 @@ h3{
 }
 .studio-col img{
     width: 100%;
+    display: block;
 }
-.Layer{
-    
+.layer{
+    background: transparent;
     height: 100%;
     width: 100%;
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     transition: 0.5s;
+
 }
-.Layer:hover{
+.layer:hover{
     background: rgba(226,0,0,0.7);
+
 }
-.Layer h3{
+.layer h3{
     width: 100%;
     font-weight: 500;
     color: #fff;
@@ -196,21 +210,24 @@ h3{
     opacity: 0;
     transition: 0.5s;
 }
-.Layer:hover h3{
+.layer:hover h3{
     bottom: 49%;
     opacity: 1;
 }
-/*------- call to action ----*/
 
+
+
+
+/*------- call to action ----*/
 .cta{
     margin: 100px;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/village.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image/maiden.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
     text-align: center;
-    padding: 10px 0;
+    padding: 100px 0;
 }
 .cta h1{
     color: #fff;
@@ -218,17 +235,27 @@ h3{
     padding: 0;
 }
 
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 40px;
+    }
+}
+
+
+
+
 /*----------footer------*/
 .footer{
     width: 100%;
     text-align: center;
     padding: 30px 0;
 }
-.footer:h4{
-    margin-bottom: 25px;
+.footer h4{
+    margin-bottom: 20px;
     margin-top: 20px;
     font-weight: 600;
 }
+
 
 /*------------- about us page---------*/
 
@@ -367,4 +394,17 @@ h3{
     .nav-links-menu.active {
         display: flex;
     }
+}
+/*---------contact us page--------*/
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
 }
